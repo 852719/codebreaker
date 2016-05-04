@@ -4,7 +4,7 @@
     <script>
       function breakit(){
         var code = document.getElementById("code").value;
-        code = code.split("A").join('А');
+        code = code.replace(/A/g, 'А');
         code = code.replace(/a/g, 'а');
         code = code.replace(/B/g, 'В');
         code = code.replace(/E/g, 'Е');
