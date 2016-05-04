@@ -5,22 +5,22 @@
       function breakit(){
         var code = document.getElementById("code").value;
         code = code.split("A").join('А');
-        code = code.replace(/a/, 'а');
-        code = code.replace(/B/, 'В');
-        code = code.replace(/E/, 'Е');
-        code = code.replace(/e/, 'е');
-        code = code.replace(/3/, 'З');
-        code = code.replace(/T/, 'Т');
-        code = code.replace(/J/, 'Ј');
-        code = code.replace(/j/, 'ј');
-        code = code.replace(/H/, 'Н');
-        code = code.replace(/M/, 'М');
-        code = code.replace(/O/, 'О');
-        code = code.replace(/o/, 'о');
-        code = code.replace(/P/, 'Р');
-        code = code.replace(/p/, 'р');
-        code = code.replace(/C/, 'С');
-        code = code.replace(/c/, 'с');
+        code = code.replace(/a/g, 'а');
+        code = code.replace(/B/g, 'В');
+        code = code.replace(/E/g, 'Е');
+        code = code.replace(/e/g, 'е');
+        code = code.replace(/3/g, 'З');
+        code = code.replace(/T/g, 'Т');
+        code = code.replace(/J/g, 'Ј');
+        code = code.replace(/j/g, 'ј');
+        code = code.replace(/H/g, 'Н');
+        code = code.replace(/M/g, 'М');
+        code = code.replace(/O/g, 'О');
+        code = code.replace(/o/g, 'о');
+        code = code.replace(/P/g, 'Р');
+        code = code.replace(/p/g, 'р');
+        code = code.replace(/C/g, 'С');
+        code = code.replace(/c/g, 'с');
         document.getElementById("broken").value = code;
         
       }
