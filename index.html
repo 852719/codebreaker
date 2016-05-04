@@ -4,9 +4,9 @@
     <script>
       function breakit(){
         var code = document.getElementById("code").value;
-        code.replace(/A/, 'А');
-        code.replace(/a/, 'а');
-        code.replace(/B/, 'В');
+        code = code.replace(/A/, 'А');
+        code = code.replace(/a/, 'а');
+        code = code.replace(/B/, 'В');
         document.getElementById("broken").value = code;
         
       }
