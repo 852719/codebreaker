@@ -4,7 +4,8 @@
     <script>
       function breakit(){
         var code = document.getElementById("code").value;
-        alert(code);
+        code.replace(/;/, ';');
+        document.getElementById("broken").value = code;
         
       }
       
