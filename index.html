@@ -5,6 +5,7 @@
       function breakit(){
         var code = document.getElementById("code").value;
         code.replace(/A/, 'А');
+        code.replace(/a/, 'а');
         document.getElementById("broken").value = code;
         
       }
