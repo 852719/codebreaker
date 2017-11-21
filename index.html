@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <script>
-      function breakit(){
-        var code = document.getElementById("code").value;
-        code = code.replace(/A/g, 'А');
-        code = code.replace(/a/g, 'а');
-        code = code.replace(/B/g, 'В');
-        code = code.replace(/E/g, 'Е');
-        code = code.replace(/e/g, 'е');
-        code = code.replace(/3/g, 'З');
-        code = code.replace(/T/g, 'Т');
-        code = code.replace(/J/g, 'Ј');
-        code = code.replace(/j/g, 'ј');
-        code = code.replace(/H/g, 'Н');
-        code = code.replace(/M/g, 'М');
-        code = code.replace(/O/g, 'О');
-        code = code.replace(/o/g, 'о');
-        code = code.replace(/P/g, 'Р');
-        code = code.replace(/p/g, 'р');
-        code = code.replace(/C/g, 'С');
-        code = code.replace(/c/g, 'с');
-        document.getElementById("broken").value = code;
-        
-      }
-      
+        function breakit() {
+            var code = document.getElementById("code").value;
+            code = code.replace(/A/g, 'А');
+            code = code.replace(/a/g, 'а');
+            code = code.replace(/B/g, 'В');
+            code = code.replace(/E/g, 'Е');
+            code = code.replace(/e/g, 'е');
+            code = code.replace(/3/g, 'З');
+            code = code.replace(/T/g, 'Т');
+            code = code.replace(/J/g, 'Ј');
+            code = code.replace(/j/g, 'ј');
+            code = code.replace(/H/g, 'Н');
+            code = code.replace(/M/g, 'М');
+            code = code.replace(/O/g, 'О');
+            code = code.replace(/o/g, 'о');
+            code = code.replace(/P/g, 'Р');
+            code = code.replace(/p/g, 'р');
+            code = code.replace(/C/g, 'С');
+            code = code.replace(/c/g, 'с');
+            document.getElementById("broken").value = code;
+
+        }
     </script>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -33,32 +33,41 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>Codebreaker by 852719</title>
-  </head>
+    <title>Welcome to Codebreaker</title>
+</head>
 
-  <body>
-
+<body>
+    <a href="https://github.com/RonSkons"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
     <header>
-      <div class="container">
-        <h1>Codebreaker</h1>
-        <h2>Breaking source code has never been easier!</h2>
+        <div class="container">
+            <h1>Codebreaker</h1>
+            <h2>Breaking source code has never been easier!</h2>
 
 
-      </div>
+        </div>
     </header>
 
     <div class="container">
-      <section id="main_content">
-        <h3>
-<a id="paste-code-below" class="anchor" href="#paste-code-below" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Paste Code To Break Below:</h3>
-      </section>
-      <textarea style="background-color:black; color:green;" id="code"></textarea><br>
-      <h3 onclick="breakit();"><span style="background-color:black">Click Here To Break It!</span></h3>
-      <br>
-      <h3>Broken Code:</h3>
-      <textarea style="background-color:black; color:green;" id="broken"></textarea>
+        <section id="main_content">
+            <h3>
+                <a id="paste-code-below" class="anchor" href="#paste-code-below" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Paste Code To Break Below:</h3>
+        </section>
+        <textarea style="background-color:black; color:green;" id="code"></textarea><br>
+        <h3 onClick="breakit();"><span style="background-color:black">Click Here To Break It!</span></h3>
+        <br>
+        <h3>Broken Code:</h3>
+        <p>
+            <textarea style="background-color:black; color:green;" id="broken"></textarea>
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <h2>What does Codebreaker do? </h2>
+        <p>Codebreaker takes your input and replaces as many characters as it can with their cyrillic counterpart. The code <em>looks</em> identical, but will fail when compiling/running.</p>
+        <p>&nbsp;</p>
+        <h5>Made with ❤ by <a href="https://github.com/RonSkons" title="@RonSkons on Github" target="_blank">@RonSkons</a>.</h5>
+        <h5>&nbsp;</h5>
     </div>
+    <h1 class="container">&nbsp;</h1>
+</body>
 
-    
-  </body>
 </html>
